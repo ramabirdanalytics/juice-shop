@@ -19,13 +19,7 @@ pipeline {
       }
     }
 
-    stage('Run Eslint') {
-      steps {
-        sh 'npm run-script cont-int'
-      }
-    }
-
-    stage('Test') {
+    stage('Test with Eslint') {
       steps {
         sh 'npm test'
       }

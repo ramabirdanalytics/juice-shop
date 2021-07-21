@@ -7,12 +7,6 @@ pipeline {
 
   }
   stages {
-    stage('Build') {
-      steps {
-        sh 'npm install'
-      }
-    }
-
     stage('eslint') {
       steps {
         sh 'npm install --save-dev eslint-plugin-security'
